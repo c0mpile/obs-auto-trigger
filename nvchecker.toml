@@ -137,7 +137,7 @@ use_max_tag = true
 # Betterbird releases are tagged on their own GitHub repo
 source = "github"
 github = "Betterbird/thunderbird-patches"
-use_latest_release = true
+use_max_tag = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # System utilities
