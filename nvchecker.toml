@@ -380,7 +380,7 @@ use_max_tag = true
 source = "gitlab"
 host = "https://invent.kde.org"
 gitlab = "graphics/krita"
-use_max_tag = true
+use_commit = true
 
 [kseexpr]
 source = "gitlab"
