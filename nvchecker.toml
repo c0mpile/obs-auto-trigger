@@ -212,9 +212,9 @@ include_pattern = "^[0-9]+\\.[0-9]+\\.[0-9]+$"
 # ══════════════════════════════════════════════════════════════════════════════
 
 [cloudflare-warp]
-source = "github"
-github = "cloudflare/cloudflared"
-use_latest_release = true
+source = "url"
+url = "https://pkg.cloudflareclient.com/dists/noble/main/binary-amd64/Packages"
+regex = "Package: cloudflare-warp\nVersion: ([\\d.]+)"
 
 [wgcf]
 source = "github"
