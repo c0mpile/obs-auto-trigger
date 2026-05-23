@@ -460,7 +460,7 @@ use_max_tag = true
 [qBittorrent-Enhanced-Edition]
 source = "github"
 github = "c0re100/qBittorrent-Enhanced-Edition"
-use_max_tag = true
+use_latest_release = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Boot / EFI
