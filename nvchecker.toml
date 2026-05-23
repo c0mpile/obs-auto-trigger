@@ -30,13 +30,6 @@ android_sdk = "build-tools"
 repo = "package"
 channel = "stable"
 
-[android-build-tools-dl]
-source = "android_sdk"
-android_sdk = "build-tools"
-channel = "stable"
-from_pattern = "(\d+)\.\d+\.\d+"
-to_pattern = "\1"
-
 #[android-platform-tools]
 #source = "android_sdk"
 #android_sdk = "platform-tools"
