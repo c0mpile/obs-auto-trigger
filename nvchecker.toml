@@ -258,6 +258,11 @@ source = "github"
 github = "obsidianmd/obsidian-releases"
 use_max_tag = true
 
+[rkdeveloptool]
+source = "github"
+github = "rockchip-linux/rkdeveloptool"
+use_commit = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Fonts
 # ══════════════════════════════════════════════════════════════════════════════
