@@ -263,6 +263,11 @@ source = "github"
 github = "rockchip-linux/rkdeveloptool"
 use_commit = true
 
+[rkflashtool]
+source = "github"
+github = "linux-rockchip/rkflashtool"
+use_commit = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Fonts
 # ══════════════════════════════════════════════════════════════════════════════
