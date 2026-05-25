@@ -58,7 +58,7 @@ use_max_tag = true
 [waydroid]
 source = "github"
 github = "waydroid/waydroid"
-use_max_tag = true
+use_commit = true
 
 [waydroid-image]
 source = "github"
