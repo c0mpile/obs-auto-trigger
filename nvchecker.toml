@@ -43,12 +43,12 @@ channel = "stable"
 [libgbinder]
 source = "github"
 github = "mer-hybris/libgbinder"
-use_max_tag = true
+use_commit = true
 
 [libglibutil]
 source = "github"
 github = "sailfishos/libglibutil"
-use_max_tag = true
+use_commit = true
 
 [python-gbinder]
 source = "github"
