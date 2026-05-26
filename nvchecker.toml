@@ -595,6 +595,11 @@ include_pattern = "^[0-9.]+$"
 # Download managers
 # ══════════════════════════════════════════════════════════════════════════════
 
+[ab-download-manager]
+source = "github"
+github = "amir1376/ab-download-manager"
+use_max_tag = true
+
 [jdownloader2]
 source = "cmd"
 cmd = "curl -fsSI 'https://jdownloader.org/download/jdownloader2?os=windows' | grep -oP 'JDownloader2Setup_\\K[0-9.]+(?=\\.exe)'"
