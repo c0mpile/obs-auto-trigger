@@ -595,7 +595,7 @@ include_pattern = "^[0-9.]+$"
 # Download managers
 # ══════════════════════════════════════════════════════════════════════════════
 
-[ab-download-manager]
+[abdm]
 source = "github"
 github = "amir1376/ab-download-manager"
 use_max_tag = true
