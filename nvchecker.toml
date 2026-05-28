@@ -111,9 +111,9 @@ github = "lhvy/pipes-rs"
 use_max_tag = true
 
 [tree]
-# classic Unix tree command — tracked via Anitya (release-monitoring.org)
-source = "anitya"
-anitya = "fedora/tree"
+source = "github"
+github = "Old-Man-Programmer/tree"
+use_max_tag = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Audio / Media
@@ -473,7 +473,7 @@ use_max_tag = true
 
 [qtscrcpy]
 source = "github"
-github = "barry-ran/QtScrcpyCore"
+github = "barry-ran/QtScrcpy"
 use_max_tag = true
 
 # ══════════════════════════════════════════════════════════════════════════════
