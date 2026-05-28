@@ -159,7 +159,12 @@ use_max_tag = true
 [fastfetch]
 source = "github"
 github = "fastfetch-cli/fastfetch"
-use_commit = true
+use_max_tag = true
+
+[flameshot]
+source = "github"
+github = "flameshot-org/flameshot"
+use_max_tag = true
 
 [iotop]
 source = "github"
