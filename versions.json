@@ -32,6 +32,7 @@
   "kurve": "v3.5.1",
   "libgbinder": "20260527.231606",
   "libglibutil": "20260525.173250",
+  "lua51-lpeg": "v1.1.0",
   "mangayomi": "v0.7.75",
   "monaspace-fonts": "v1.400",
   "nerd-fonts": "v3.4.0",
