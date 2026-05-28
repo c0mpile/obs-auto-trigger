@@ -110,11 +110,6 @@ source = "github"
 github = "lhvy/pipes-rs"
 use_max_tag = true
 
-[tree]
-source = "github"
-github = "Old-Man-Programmer/tree"
-use_max_tag = true
-
 # ══════════════════════════════════════════════════════════════════════════════
 # Audio / Media
 # ══════════════════════════════════════════════════════════════════════════════
@@ -134,7 +129,6 @@ use_max_tag = true
 # ══════════════════════════════════════════════════════════════════════════════
 
 [betterbird]
-# Betterbird releases are tagged on their own GitHub repo
 source = "github"
 github = "Betterbird/thunderbird-patches"
 use_max_tag = true
@@ -470,10 +464,10 @@ source = "github"
 github = "qt/qtmultimedia"
 use_max_tag = true
 
-[qtscrcpy]
-source = "github"
-github = "barry-ran/QtScrcpy"
-use_max_tag = true
+#[qtscrcpy]
+#source = "github"
+#github = "barry-ran/QtScrcpy"
+#use_max_tag = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Torrents
