@@ -379,3 +379,19 @@ jobs:
             trigger_summary.json
           if-no-files-found: ignore   # don't fail if a file was never created
           retention-days: 14
+       - name: Debug GitHub auth
+  env:
+    TOKEN: ${{ secrets.NVCHECKER_PAT || secrets.GITHUB_TOKEN }}
+  run: |
+    python - <<'EOF'
+    import requests, os
+
+    token = os.environ["TOKEN"]
+
+    r = requests.get(
+      "https://api.github.com/rate_limit",
+      headers={"Authorization": f"Bearer {token}"}
+    )
+
+    print(r.json())
+    EOF
