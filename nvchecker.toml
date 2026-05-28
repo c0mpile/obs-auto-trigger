@@ -5,7 +5,7 @@
 [__config__]
 oldver = "versions.json"
 newver = "versions_new.json"
-
+max_concurrency = 3
 # Optional: GitHub token for higher API rate limits
 # keyfile = ".nvchecker_keyfile.toml"
 
