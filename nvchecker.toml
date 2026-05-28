@@ -584,12 +584,14 @@ use_max_tag = true
 # Video calls
 # ══════════════════════════════════════════════════════════════════════════════
 
+[zoom]
+source = "cmd"
 cmd = '''
-curl --connect-timeout 10 --max-time 20 -fsSL \
-"https://zoom.us/download?os=linux" |
-grep -oP 'zoom_openSUSE_x86_64-\K[0-9.]+(?=\.rpm)' |
+curl -fsSL "https://zoom.us/download?os=linux" |
+grep -oP 'zoom_(amd64|openSUSE_x86_64)-\K[0-9.]+(?=\.(deb|rpm))' |
 head -n1
 '''
+include_pattern = "^[0-9.]+$"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Download managers
@@ -600,11 +602,7 @@ source = "github"
 github = "amir1376/ab-download-manager"
 use_max_tag = true
 
-cmd = '''
-curl --retry 3 --retry-delay 2 \
---connect-timeout 10 --max-time 20 \
--fsSL "https://jdownloader.org/jdownloader2" |
-grep -oP 'JDownloader2Setup_[0-9.]+' |
-head -n1 |
-grep -oP '[0-9.]+'
-'''
+[jdownloader2]
+source = "regex"
+url = "https://jdownloader.org/jdownloader2"
+regex = 'JDownloader2Setup_([0-9.]+)\.exe'
