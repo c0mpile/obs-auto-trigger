@@ -104,6 +104,22 @@ jobs:
             echo "{}" > "${{ env.VERSIONS_OLD }}"
             echo "ℹ️  Created empty ${{ env.VERSIONS_OLD }} (first run)."
           fi
+      - name: Debug GitHub auth
+        env:
+          TOKEN: ${{ secrets.NVCHECKER_PAT || secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import requests, os, json
+
+          token = os.environ["TOKEN"]
+
+          r = requests.get(
+              "https://api.github.com/rate_limit",
+              headers={"Authorization": f"Bearer {token}"}
+          )
+
+          print(json.dumps(r.json(), indent=2))
+          EOF
 
       # ── 6. Run nvchecker ──────────────────────────────────────────────────
       # File paths are declared in nvchecker.toml under [__config__]:
@@ -380,18 +396,3 @@ jobs:
           if-no-files-found: ignore   # don't fail if a file was never created
           retention-days: 14
        - name: Debug GitHub auth
-  env:
-    TOKEN: ${{ secrets.NVCHECKER_PAT || secrets.GITHUB_TOKEN }}
-  run: |
-    python - <<'EOF'
-    import requests, os
-
-    token = os.environ["TOKEN"]
-
-    r = requests.get(
-      "https://api.github.com/rate_limit",
-      headers={"Authorization": f"Bearer {token}"}
-    )
-
-    print(r.json())
-    EOF
