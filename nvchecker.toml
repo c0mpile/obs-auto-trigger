@@ -442,9 +442,8 @@ use_max_tag = true
 # ══════════════════════════════════════════════════════════════════════════════
 
 [lua51-lpeg]
-# LPeg moved to GitHub under lunarmodules org
 source = "github"
-github = "lunarmodules/lpeg"
+github = "roberto-ieru/LPeg"
 use_max_tag = true
 
 [python-pyclip]
