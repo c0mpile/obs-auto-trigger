@@ -104,21 +104,23 @@ jobs:
             echo "{}" > "${{ env.VERSIONS_OLD }}"
             echo "ℹ️  Created empty ${{ env.VERSIONS_OLD }} (first run)."
           fi
+
+      # ── Debug GitHub Auth (Moved Here) ────────────────────────────────────
       - name: Debug GitHub auth
         env:
           TOKEN: ${{ secrets.NVCHECKER_PAT || secrets.GITHUB_TOKEN }}
         run: |
           python - <<'EOF'
-          import requests, os, json
+          import requests, os
 
           token = os.environ["TOKEN"]
 
           r = requests.get(
-              "https://api.github.com/rate_limit",
-              headers={"Authorization": f"Bearer {token}"}
+            "https://api.github.com/rate_limit",
+            headers={"Authorization": f"Bearer {token}"}
           )
 
-          print(json.dumps(r.json(), indent=2))
+          print(r.json())
           EOF
 
       # ── 6. Run nvchecker ──────────────────────────────────────────────────
@@ -395,4 +397,3 @@ jobs:
             trigger_summary.json
           if-no-files-found: ignore   # don't fail if a file was never created
           retention-days: 14
-       - name: Debug GitHub auth
