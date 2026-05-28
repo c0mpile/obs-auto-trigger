@@ -382,7 +382,7 @@ use_max_tag = true
 [plasma6-theme-apus]
 source = "git"
 git = "https://gitlab.com/jomada/apus.git"
-use_max_tag = true
+use_commit = true
 
 [plasma6-theme-klassy]
 source = "github"
@@ -392,7 +392,7 @@ use_max_tag = true
 [plasma6-theme-otto]
 source = "git"
 git = "https://gitlab.com/jomada/otto.git"
-use_max_tag = true
+use_commit = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # KDE Applications
@@ -400,13 +400,13 @@ use_max_tag = true
 
 [krita]
 source = "gitlab"
-host = "https://invent.kde.org"
+host = "invent.kde.org"
 gitlab = "graphics/krita"
 use_commit = true
 
 [kseexpr]
 source = "gitlab"
-host = "https://invent.kde.org"
+host = "invent.kde.org"
 gitlab = "graphics/kseexpr"
 use_max_tag = true
 
