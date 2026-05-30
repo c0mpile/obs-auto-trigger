@@ -546,7 +546,7 @@ use_max_tag = true
 [TuxManager]
 source = "github"
 github = "benapetr/TuxManager"
-use_max_tag = true
+use_commit = true
 
 # ══════════════════════════════════════════════════════════════════════════════
 # AppImage management
