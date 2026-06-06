@@ -455,6 +455,11 @@ source = "github"
 github = "eylles/pywal16"
 use_max_tag = true
 
+[python-markitdown]
+source = "github"
+github = "microsoft/markitdown"
+use_max_tag = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Qt / Multimedia
 # ══════════════════════════════════════════════════════════════════════════════
