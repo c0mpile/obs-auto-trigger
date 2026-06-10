@@ -141,6 +141,12 @@ source = "github"
 github = "ONLYOFFICE/DesktopEditors"
 use_max_tag = true
 
+[joplin]
+source = "github"
+github = "laurent22/joplin"
+use_max_tag = true
+include_regex = "^v[\\d.]+$"
+
 # ══════════════════════════════════════════════════════════════════════════════
 # System utilities
 # ══════════════════════════════════════════════════════════════════════════════
