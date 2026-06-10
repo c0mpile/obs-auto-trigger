@@ -144,7 +144,7 @@ use_max_tag = true
 [joplin-desktop]
 source = "github"
 github = "laurent22/joplin"
-use_max_tag = true
+use_latest_release = true
 include_regex = "^v[\\d.]+$"
 
 # ══════════════════════════════════════════════════════════════════════════════
