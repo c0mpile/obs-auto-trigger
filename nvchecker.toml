@@ -311,6 +311,11 @@ source = "github"
 github = "DavidoTek/ProtonUp-Qt"
 use_max_tag = true
 
+[vermouth]
+source = "git"
+git = "https://github.com/dekomote/vermouth.git"
+use_commit = true
+
 [rbdoom3bfg]
 source = "github"
 github = "RobertBeckebans/RBDOOM-3-BFG"
