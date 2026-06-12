@@ -619,8 +619,8 @@ github = "amir1376/ab-download-manager"
 use_max_tag = true
 
 [yt-dlp]
-source = "github"
-github = "yt-dlp/yt-dlp"
+source = "git"
+git = "https://github.com/yt-dlp/yt-dlp"
 use_commit = true
 
 [jdownloader2]
