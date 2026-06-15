@@ -532,6 +532,16 @@ source = "github"
 github = "nickcoutsos/scrcpy-autoadb"
 use_max_tag = true
 
+[freerdp]
+source = "git"
+git = "https://github.com/FreeRDP/FreeRDP.git"
+use_commit = true
+
+[remmina]
+source = "git"
+git = "https://gitlab.com/Remmina/Remmina.git"
+use_commit = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Messaging / Social
 # ══════════════════════════════════════════════════════════════════════════════
