@@ -1,7 +1,7 @@
 {
   "DirectXShaderCompiler": "v1.10.2605.24",
   "TuxManager": "20260531.115644",
-  "abdm": "v1.9.0",
+  "abdm": "v1.9.1",
   "android-apktool": "v3.0.2",
   "android-build-tools": "37.0.0",
   "arduino-ide": "2.3.10",
@@ -28,7 +28,7 @@
   "kde-material-you-colors": "v2.2.0",
   "kernel-xanmod-v3": "7.0.12-xanmod1",
   "komikku": "v50.6.0",
-  "krita": "20260614",
+  "krita": "20260615",
   "kseexpr": "v6.0.0.0",
   "kurve": "v3.5.1",
   "libgbinder": "20260601.161247",
