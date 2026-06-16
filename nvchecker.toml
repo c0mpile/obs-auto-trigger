@@ -124,6 +124,21 @@ source = "github"
 github = "linuxmint/hypnotix"
 use_max_tag = true
 
+[fred-tv]
+source = "git"
+git = "https://github.com/Fredolx/open-tv.git"
+use_max_tag = true
+
+[iptvnator]
+source = "git"
+git = "https://github.com/4gray/iptvnator.git"
+use_max_tag = true
+
+[megacubo]
+source = "git"
+git = "https://github.com/EdenwareApps/Megacubo.git"
+use_max_tag = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Email
 # ══════════════════════════════════════════════════════════════════════════════
@@ -478,11 +493,6 @@ use_max_tag = true
 [qt6-multimedia-ffmpeg]
 source = "github"
 github = "qt/qtmultimedia"
-use_max_tag = true
-
-[megacubo]
-source = "git"
-git = "https://github.com/EdenwareApps/Megacubo.git"
 use_max_tag = true
 
 #[qtscrcpy]
