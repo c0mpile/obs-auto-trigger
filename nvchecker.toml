@@ -235,6 +235,16 @@ include_pattern = "^[0-9]+\\.[0-9]+\\.[0-9]+$"
 #github = "itachi-re/ff-dev-obs"
 #use_max_tag = true
 
+[zen-browser]
+source = "git"
+git = "https://github.com/zen-browser/desktop.git"
+use_max_release = true
+
+[floorp]
+source = "git"
+git = "https://github.com/Floorp-Projects/Floorp.git"
+use_max_release = true
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Network / VPN
 # ══════════════════════════════════════════════════════════════════════════════
@@ -344,6 +354,11 @@ use_max_tag = true
 [winboat]
 source = "github"
 github = "TibixDev/winboat"
+use_max_tag = true
+
+[gamescope]
+source = "git"
+git = "https://github.com/ValveSoftware/gamescope.git"
 use_max_tag = true
 
 # ══════════════════════════════════════════════════════════════════════════════
