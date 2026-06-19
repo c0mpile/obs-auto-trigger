@@ -223,7 +223,7 @@ include_pattern = "^[0-9]+\\.[0-9]+\\.[0-9]+$"
 [brave-origin-beta]
 source = "regex"
 url = "https://versions.brave.com/latest/brave-versions.json"
-regex = '"channel":"beta".*?"name":"([^"]+)"'
+regex = '"name":"([0-9]+\.[0-9]+\.[0-9]+)","channel":"beta"'
 
 #[brave-browser]
 #source = "github"
