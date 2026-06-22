@@ -1,20 +1,5 @@
 {
-  "version": 2,
-  "data": {
-    "64Gram": {
-      "version": "v1.2.5",
-      "gitref": "refs/tags/v1.2.5",
-      "url": "https://github.com/TDesktop-x64/tdesktop/releases/tag/v1.2.5"
-    },
-    "mangowm": {
-      "version": "0.14.4",
-      "gitref": "refs/tags/0.14.4",
-      "url": "https://github.com/mangowm/mango/releases/tag/0.14.4"
-    },
-    "scenefx": {
-      "version": "0.4.1",
-      "gitref": "refs/tags/0.4.1",
-      "url": "https://github.com/wlrfx/scenefx/releases/tag/0.4.1"
-    }
-  }
+  "64Gram": "v1.2.5",
+  "mangowm": "0.14.4",
+  "scenefx": "0.4.1"
 }
